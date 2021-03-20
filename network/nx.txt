@@ -1,0 +1,127 @@
+
+
+out.moreno_innovation_innovation
+
+
+https://www.youtube.com/watch?v=1ErL1z_lKd8
+
+import networkx as nx
+import mat
+
+G = nx.read_edgelist('text.txt')
+
+nx.info(G)
+
+nx.number_of_nodes(G)
+nx.number_of_edges(G)
+
+nx.is_directed(G)
+
+nx.degree(G)
+
+{1: 16,
+ 2: 9,
+ 3: 10,
+ }
+
+
+a5q0G0000000x3t
+a5q0G0000000x3U
+
+a5q0G0000000x48
+challenges
+
+nx.degree(G).values()
+
+set(nx.degree(G).values())
+
+list(set(nx.degree(G).values()))
+
+#degree distribution
+def plot_deg_dist(G):
+    all_degrees = nx.degree(G).values()
+    unique_degrees=list(set(nx.degree(G).values()))
+
+    count_of_degrees = []
+    for i in unique_degrees:
+        x = all_degrees.count(i)
+        count_of_degrees.append(x)
+
+    plt.plot(unique_degrees, count_of_degrees)
+
+    #plt.plot(unique_degrees, count_of_degrees, 'yo')
+    #plt.plot(unique_degrees, count_of_degrees, 'yo-')
+    #plt.loglog(unique_degrees, count_of_degrees, 'yo')
+
+    plt.xlabel('Degrees')
+    plt.ylabel('Number of nodes')
+    plt.title('Degree distribution')
+    plt.show()
+
+
+plot_deg_dist(G)
+
+
+#density distribution
+
+G = nx.complete_graph(100)
+nx.density(G)
+
+H = nx.Graph()
+
+nx.clustering(G)
+
+for i in nx.clustering(G).items():
+   print i
+
+nx.gnp_random_graph(20,0.5)
+
+
+
+
+https://www.youtube.com/watch?v=sGAT2npnNLc
+
+import networkx as nx
+import matplotlib.pyplot as plt
+
+#undirected graph
+G=nx.Graph()
+
+#directed graph
+#G=nx.DiGraph()
+
+city_set =
+['Delhi', 'Bangalore', 'Chennai', 'Pune']
+
+for each in city_set:
+    G.add_node(each)
+
+
+
+edges
+
+networkx.github.io/documentation
+
+
+
+
+
+
+
+pos=nx.circular_layout(G)
+nx.draw(G,pos)
+plt.show()
+
+
+
+
+
+
+
+
+
+
+
+nx.draw_circular(G)
+nx.draw.draw(G)
+plt.show()

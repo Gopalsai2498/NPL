@@ -1,0 +1,11 @@
+from collections import Counter
+>>> from nltk import ngrams
+>>> tokens = "this is a sentence with some of this words this is meh ".split()
+>>> Counter(list(ngrams(tokens, 2)))
+Counter({('this', 'is'): 2, ('is', 'a'): 1, ('a', 'sentence'): 1, ('sentence', 'with'): 1, ('with', 'some'): 1, ('some', 'of'): 1, ('of', 'this'): 1, ('this', 'words'): 1, ('words', 'this'): 1, ('is', 'meh'): 1})
+
+
+
+
+a5q2I000000blkA
+transfusion
